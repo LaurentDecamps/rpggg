@@ -29,6 +29,11 @@ export class Monde{
 
     }
 
+    /**
+     * On lance le combat à mort entre le combattant 1 et le combattant 2
+     * @param combattant1 Le premier combattant
+     * @param combattant2 Le second combattant
+     */
     static combat = (combattant1 : Combattant, combattant2 : Combattant) : void => {
         while (combattant2.pointsDeVie>0 && combattant1.pointsDeVie >0){            
 

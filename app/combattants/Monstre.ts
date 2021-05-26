@@ -6,6 +6,4 @@ export class Monstre extends AbstractCombattant{
         super(pointsDeVie,degats,nom);
 
     }
-
-
 }
