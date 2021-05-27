@@ -15,7 +15,7 @@ export abstract class AbstractCombattant implements Combattant{
         // Afficher un message pour notifier de l'attaque
         console.log(`${this._nom} attaque ${adversaire.nom} ! Le salaud !`);
         // Appeler la methode Defendre de l'adversaire en passant en Params.
-        adversaire.defendre(this._degats);        
+        adversaire.defendre(this._degats);
     }
 
     defendre(degats: number): void {
@@ -24,21 +24,27 @@ export abstract class AbstractCombattant implements Combattant{
         // Afficher les point de vie restants
         console.log(`Il ne reste que ${this._pointsDeVie} point de vie à ${this._nom}`);
     }
+
     getNom(): string {
         throw new Error("Method not implemented.");
     }
+
     setNom(nom: string): void {
         throw new Error("Method not implemented.");
     }
+    
     getPointsDeVie(): number {
         throw new Error("Method not implemented.");
     }
+
     setPointsDeVie(pdv: number): void {
         throw new Error("Method not implemented.");
     }
+
     getDegats(): number {
         throw new Error("Method not implemented.");
     }
+    
     setDegats(degats: number): void {
         throw new Error("Method not implemented.");
     }
